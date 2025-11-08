@@ -1,0 +1,83 @@
+.metricsContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.metricsContainer h1 {
+  font-size: 1.8rem;
+  color: var(--cor-primaria);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.metricsContainer p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--cor-fundo);
+  padding-bottom: 15px;
+}
+
+.error {
+  color: var(--cor-erro);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: var(--cor-branca);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  text-align: center;
+  border-bottom: 5px solid var(--cor-primaria);
+}
+
+.card h2 {
+  font-size: 3rem;
+  color: var(--cor-primaria);
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.card.pendente {
+  border-bottom-color: #f59e0b; /* Laranja */
+}
+.card.pendente h2 {
+  color: #f59e0b;
+}
+
+.card.emAnalise {
+  border-bottom-color: #3b82f6; /* Azul */
+}
+.card.emAnalise h2 {
+  color: #3b82f6;
+}
+
+.card.concluido {
+  border-bottom-color: #10b981; /* Verde */
+}
+.card.concluido h2 {
+  color: #10b981;
+}
+
+.card.avaliacao {
+  border-bottom-color: #0d6efd; /* Azul diferente */
+}
+.card.avaliacao h2 {
+  color: #0d6efd;
+}

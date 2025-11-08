@@ -1,0 +1,195 @@
+.adminContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: var(--cor-branca);
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+}
+
+.adminContainer h1 {
+  font-size: 1.8rem;
+  color: var(--cor-primaria);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.adminContainer p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--cor-fundo);
+  padding-bottom: 15px;
+}
+
+.error {
+  color: var(--cor-erro);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.solicitacoesTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.solicitacoesTable thead {
+  background-color: var(--cor-fundo);
+}
+
+.solicitacoesTable th {
+  padding: 15px 10px;
+  text-align: left;
+  font-weight: 700;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+}
+
+.solicitacoesTable tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.solicitacoesTable tbody tr:hover {
+  background-color: var(--cor-fundo);
+}
+
+.solicitacoesTable td {
+  padding: 18px 10px;
+  vertical-align: middle;
+}
+
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.actionButtons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: var(--cor-branca);
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.actionButtons button:hover {
+  transform: scale(1.05);
+}
+
+.btnAnalise {
+  background-color: #3b82f6; /* Azul */
+}
+
+.btnConcluir {
+  background-color: #10b981; /* Verde */
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--cor-branca);
+  white-space: nowrap;
+}
+
+.status.pendente {
+  background-color: #f59e0b; /* Laranja */
+}
+
+.status.emanalise,
+.status.emanálise {
+  background-color: #3b82f6; /* Azul */
+}
+
+.status.concluido,
+.status.concluído {
+  background-color: #10b981; /* Verde */
+}
+
+.btnDetalhes {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6c757d; /* Cinza */
+  color: var(--cor-branca);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btnDetalhes:hover {
+  background-color: #5a6268;
+}
+
+/* --- Estilos do Modal --- */
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modalContent {
+  position: relative;
+  background: var(--cor-branca);
+  padding: 30px 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  outline: none;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.modalContent h2 {
+  color: var(--cor-primaria);
+  margin-top: 0;
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--cor-fundo);
+  padding-bottom: 10px;
+}
+
+.modalSection {
+  margin-bottom: 20px;
+}
+
+.modalSection strong {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modalSection p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  border: none;
+  white-space: pre-wrap;
+}
