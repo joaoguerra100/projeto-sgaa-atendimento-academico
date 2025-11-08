@@ -1,5 +1,5 @@
 # Etapa 1: Build - Pega a imagem do .NET 8 SDK
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
 # Copia o arquivo de projeto (.csproj) e restaura as dependências
